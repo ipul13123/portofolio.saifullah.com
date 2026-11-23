@@ -249,7 +249,6 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        /* Styling Foto Profil Agar Rapi & Bulat Elegan */
         .profile-avatar {
             width: 85px;
             height: 85px;
@@ -532,6 +531,66 @@
             font-size: 0.95rem;
         }
 
+        /* Dokumentasi Foto Kegiatan */
+        .doc-block {
+            margin-top: 20px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .doc-label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--accent-gold-light);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+            gap: 14px;
+        }
+
+        .doc-card {
+            background: rgba(10, 15, 29, 0.65);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .doc-card:hover {
+            border-color: var(--accent-gold-light);
+            transform: translateY(-3px);
+        }
+
+        .doc-card a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .doc-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            object-position: center 18%;
+            display: block;
+        }
+
+        .doc-caption {
+            padding: 10px 12px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            text-align: center;
+        }
+
         #education {
             padding: 100px 0;
         }
@@ -706,6 +765,16 @@
 
             .nav-links {
                 display: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .doc-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .doc-card img {
+                height: 170px;
             }
         }
     </style>
@@ -917,6 +986,65 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2026</div>
+                        <h3 class="timeline-title">Master of Ceremony (MC) — Jobfair UMK & Acara Akuntansi</h3>
+                        <div class="timeline-org">Universitas Muria Kudus</div>
+                        <div class="timeline-desc">
+                            Memandu jalannya berbagai agenda resmi kampus dan kegiatan akademik, termasuk Jobfair Universitas Muria Kudus (2024–2026) serta acara bertema akuntansi, dengan komunikasi yang jelas, terstruktur, dan adaptif terhadap audiens serta tamu instansi/perusahaan.
+                        </div>
+
+                        <div class="doc-block">
+                            <div class="doc-label"><i class="fa-solid fa-camera"></i> Dokumentasi Kegiatan MC</div>
+                            <div class="doc-grid">
+                                <div class="doc-card">
+                                    <a href="mv-jobfair-umk-2024.jpeg" target="_blank" title="Lihat foto penuh Jobfair UMK 2024">
+                                        <img src="mv-jobfair-umk-2024.jpeg" alt="MC Jobfair Universitas Muria Kudus 2024">
+                                        <div class="doc-caption">Jobfair UMK 2024</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="mv-jobfair-umk-2025.jpeg" target="_blank" title="Lihat foto penuh Jobfair UMK 2025">
+                                        <img src="mv-jobfair-umk-2025.jpeg" alt="MC Jobfair Universitas Muria Kudus 2025">
+                                        <div class="doc-caption">Jobfair UMK 2025 (Sesi 1)</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="mv-jobfair-umk-2025.2.jpeg" target="_blank" title="Lihat foto penuh Jobfair UMK 2025">
+                                        <img src="mv-jobfair-umk-2025.2.jpeg" alt="MC Jobfair Universitas Muria Kudus 2025">
+                                        <div class="doc-caption">Jobfair UMK 2025 (Sesi 2)</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="mv-jobfair-umk-2026.jpeg" target="_blank" title="Lihat foto penuh Jobfair UMK 2026">
+                                        <img src="mv-jobfair-umk-2026.jpeg" alt="MC Jobfair Universitas Muria Kudus 12-13 Agustus 2026">
+                                        <div class="doc-caption">Jobfair UMK 2026 (Sesi 1)</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="mv-jobfair-umk-2026.2.jpeg" target="_blank" title="Lihat foto penuh Jobfair UMK 2026">
+                                        <img src="mv-jobfair-umk-2026.2.jpeg" alt="MC Jobfair Universitas Muria Kudus 12-13 Agustus 2026">
+                                        <div class="doc-caption">Jobfair UMK 2026 (Sesi 2)</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="mc-akuntansi.jpeg" target="_blank" title="Lihat foto penuh Acara Akuntansi">
+                                        <img src="mc-akuntansi.jpeg" alt="MC Acara Akuntansi Universitas Muria Kudus">
+                                        <div class="doc-caption">Acara Akuntansi (Sesi 1)</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="mc-akuntansi.2.jpeg" target="_blank" title="Lihat foto penuh Acara Akuntansi">
+                                        <img src="mc-akuntansi.2.jpeg" alt="MC Acara Akuntansi Universitas Muria Kudus">
+                                        <div class="doc-caption">Acara Akuntansi (Sesi 2)</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <div class="timeline-date">Juli 2025 - Juli 2026</div>
                         <h3 class="timeline-title">Divisi Education</h3>
                         <div class="timeline-org">GenBI Korkom Semarang (Bank Indonesia Scholarship)</div>
@@ -944,6 +1072,54 @@
                         <div class="timeline-org">Badan Eksekutif Mahasiswa Fakultas Ekonomi & Bisnis UMK</div>
                         <div class="timeline-desc">
                             Memimpin tim eksekutif fakultas, mengoordinasikan seluruh program kerja mingguan dan tahunan, mewakili aspirasi mahasiswa FEB, serta membangun kolaborasi strategis internal kampus maupun eksternal untuk memastikan seluruh kegiatan berjalan efektif.
+                        </div>
+
+                        <div class="doc-block">
+                            <div class="doc-label"><i class="fa-solid fa-camera"></i> Dokumentasi BEM FEB UMK</div>
+                            <div class="doc-grid">
+                                <div class="doc-card">
+                                    <a href="bem-feb-1.jpeg" target="_blank" title="Lihat foto penuh Dokumentasi BEM FEB UMK 1">
+                                        <img src="bem-feb-1.jpeg" alt="Dokumentasi BEM FEB UMK 1">
+                                        <div class="doc-caption">Dokumentasi FEB UMK 1</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="bem-feb-2.jpeg" target="_blank" title="Lihat foto penuh Dokumentasi BEM FEB UMK 2">
+                                        <img src="bem-feb-2.jpeg" alt="Dokumentasi BEM FEB UMK 2">
+                                        <div class="doc-caption">Dokumentasi FEB UMK 2</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="bem-feb-3.jpeg" target="_blank" title="Lihat foto penuh Dokumentasi Keluarga Besar FEB UMK">
+                                        <img src="bem-feb-3.jpeg" alt="Dokumentasi Keluarga Besar FEB UMK">
+                                        <div class="doc-caption">Keluarga Besar FEB UMK</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="bem-feb-4.jpeg" target="_blank" title="Lihat foto penuh Dokumentasi Ecofestaria">
+                                        <img src="bem-feb-4.jpeg" alt="Dokumentasi Kegiatan Ecofestaria">
+                                        <div class="doc-caption">Ecofestaria (Dokumentasi 1)</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="bem-feb-5.jpeg" target="_blank" title="Lihat foto penuh Dokumentasi Pengurus & Tim FEB UMK">
+                                        <img src="bem-feb-5.jpeg" alt="Dokumentasi Pengurus dan Tim FEB UMK">
+                                        <div class="doc-caption">Tim & Pengurus FEB UMK 1</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="bem-feb-6.jpeg" target="_blank" title="Lihat foto penuh Dokumentasi Pengurus & Tim FEB UMK">
+                                        <img src="bem-feb-6.jpeg" alt="Dokumentasi Pengurus dan Tim FEB UMK">
+                                        <div class="doc-caption">Tim & Pengurus FEB UMK 2</div>
+                                    </a>
+                                </div>
+                                <div class="doc-card">
+                                    <a href="bem-feb-7.jpeg" target="_blank" title="Lihat foto penuh Dokumentasi Panggung Ecofestaria">
+                                        <img src="bem-feb-7.jpeg" alt="Dokumentasi Panggung Ecofestaria">
+                                        <div class="doc-caption">Ecofestaria (Dokumentasi 2)</div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
